@@ -1,0 +1,178 @@
+ul,ol {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: lightcyan;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    }
+header{
+    background-color: lightcoral; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8em;
+    font-size: .90em;
+    width:auto;
+}
+header ul {
+    display: flex;
+    gap: 1em;
+}
+header a i{
+    font-size: x-large;
+    color: darkorchid;
+}
+main .presentación{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    align-content: center;
+    justify-content:flex-start;
+    padding: 11em;
+}
+section,
+.img-presentacion-img{
+    width: 75%;
+    padding: 10px;
+}
+.presentación,
+.txt-presentación{
+    font-size: 18px;
+    text-align: right;
+}
+.img-corte,
+.imgdecorte{
+    width:100%;
+}
+main .trabajos {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 100px;
+    margin: 50px;
+    background-color: palevioletred;
+}
+main .trabajo-grupo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+main .trabajos-1, .trabajos-2, .trabajos-3{
+    padding: 10px;
+    margin: 10px;
+    background-color: lightpink;
+    border-radius: 5%;
+}
+.trabajos-img-1,
+.trabajos-img-2,
+.trabajos-img-3{
+    width: 70%;
+    border-radius: 20%;
+}
+footer{
+    background-color: lightcoral;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1em;
+    width: auto;
+}
+footer ul li{
+    font-size: .9em;
+}
+footer a i{
+    font-size: x-large;
+}
+.contacto-li{
+    color: rgb(114, 38, 38);
+    text-decoration:underline;
+}
+#check {
+    display: none;
+}
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor:pointer;
+    display:none;
+}
+#boton-aleatorio{
+    background-color: lightblue;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    
+}
+#btn-generar{
+    border-style: double;
+    padding: 7px;
+    background-color: lightcoral;
+    cursor: pointer;
+}
+#footer #frase{
+    font-size: 15px;
+    font-family: cursive;
+}
+/*MEDIA QUARYS*/
+@media (max-width: 768px) {
+    header{
+        background-color: lightblue;
+        width: auto;
+    }
+    header a i{
+        font-size: medium;
+    }
+    main .presentación{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        margin: 10px;
+    }
+    main .presentación .img-presentación{
+        width: 70%;
+        text-align: center;
+    }
+    main .presentación .txt-presentación {
+        text-align: center;
+        font-size: 14px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    #check:checked ~ ul {
+        left:0;
+        }
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        font-size: 20px;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(42, 158, 158);
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+}

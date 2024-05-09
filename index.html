@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7f571b97e3.js" crossorigin="anonymous"></script>    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+    <title>Mi primera web</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="./formulario/formulario.html">
+                <i class="fa-solid fa-star"></i>
+            </a>
+        </div>
+        <nav>
+            <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            <ul>
+                <li> <a href="./formulario/formulario.html">Inicio </a></li>
+                <li> Acerca de mi</li>
+                <li> Trabajos </li>
+                <li> Servicios</li>
+                <li> Contacto </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="presentación">
+            <div class="img-presentación">
+                <img src="./imágenes/img-parrafo.jpg" alt="foto-profesional" class="img-presentacion-img">
+            </div>
+            <div class="txt-presentación">
+                <h3> Acerca de mi </h3>
+                <p class="p-1"> ¡Hola, mundo! Aquí aprenderás un poco más sobre mi.</p>
+                <p class="p-2"> Me llamo Paula, nací y vivo en Mendoza. Mis pasiones son el marketing, las redes sociales y los medios de comunicación. Me encantaría aprender a programar para ampliar mis conocimientos laborales.</p>
+            </div>
+        </section>
+        <section class="img-corte">
+            <div>
+                <img src="./imágenes/img-fondo.jpg" alt="imagen ilustrativa de fondo" class="imgdecorte">
+            </div>
+        </section>
+        <section class="trabajos">
+            <div class="trabajo-grupo">
+                <div class="trabajos-1">
+                    <div class="imagen-t">
+                        <img src="./imágenes/img-fondo.jpg" alt="" class="trabajos-img-1">
+                    </div>
+                    <h4> Marketing Digital </h4>
+                    <p> Sed vitae urna non diam pretium porttitor a in mi. Sed tellus tellus, fringilla sit amet urna sit amet, mattis bibendum neque. Fusce non pellentesque mi. Curabitur pretium eget nunc vitae viverra. Duis et sodales nibh. Integer dignissim commodo nisi, quis molestie neque interdum eget. Ut eget nisl at magna elementum imperdiet ac at ex.
+                    </p>
+                </div>
+                <div class="trabajos-2">
+                    <div class="imagen-t">
+                        <img src="./imágenes/img-fondo.jpg" alt="" class="trabajos-img-2">
+                    </div>
+                    <h4> Marketing Digital </h4>
+                    <p> Sed vitae urna non diam pretium porttitor a in mi. Sed tellus tellus, fringilla sit amet urna sit amet, mattis bibendum neque. Fusce non pellentesque mi. Curabitur pretium eget nunc vitae viverra. Duis et sodales nibh. Integer dignissim commodo nisi, quis molestie neque interdum eget. Ut eget nisl at magna elementum imperdiet ac at ex.
+                    </p>
+                </div>
+                <div class="trabajos-3">
+                    <div class="imagen-t">
+                        <img src="./imágenes/img-fondo.jpg" alt="" class="trabajos-img-3">
+                    </div>
+                    <h4> Marketing Digital </h4>
+                    <p> Sed vitae urna non diam pretium porttitor a in mi. Sed tellus tellus, fringilla sit amet urna sit amet, mattis bibendum neque. Fusce non pellentesque mi. Curabitur pretium eget nunc vitae viverra. Duis et sodales nibh. Integer dignissim commodo nisi, quis molestie neque interdum eget. Ut eget nisl at magna elementum imperdiet ac at ex.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="contacto">
+                <ul>
+                    <li class="contacto-li"> <strong> Contacto</strong></li>
+                    <br>
+                    <li> Instagram</li>
+                    <li> Tiktok</li>
+                    <li> Whatsapp</li>
+                </ul>
+            </div>
+            <div class="contacto-logo">
+                <a>
+                    <i class="fa-solid fa-star"></i>
+                </a>
+            </div>
+        </footer>
+    <!--CREADOR DE FRASES ALEATORIAS JS-->
+        <div id="boton-aleatorio">
+            <button id="btn-generar">Generar Frase Aleatoria</button>
+            <footer id="footer">
+                <p id="frase"></p>
+            </footer>
+        </div>
+    </main>
+    <!--LINK JS-->
+    <script src="./index.js"></script>
+</body>
+</html>
